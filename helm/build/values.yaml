@@ -1,0 +1,15 @@
+app:
+  name: test2-poi-gateway-app
+  namespace: test2
+  cluster: .apps.rosa-cvtl6.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-xchange/test2-gateway
+  org: rhdh-xchange
+  name: test2-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: test2/poi-gateway-app
+  tag: latest
